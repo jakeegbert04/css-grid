@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+
+div {
+  border: 1px dashed red;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(3, 1fr) 2fr; */
+  gap: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  /* grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: -1; */
+
+  grid-area: 1 / 1/ 1 / -1;
+}
+
+/* Col 1, Row 2 */
